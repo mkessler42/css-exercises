@@ -1,22 +1,58 @@
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+a {
+    margin: 10px;
+    text-decoration: none;
+    color: #e5e7eb;
+    font-weight: lighter;
+}
+
+button {
+    background-color: #3882f6;
+    color: #e5e7eb;
+    border-color: #e5e7eb;
+    border-style: solid;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .header {
+    display: flex;
     background-color: #1f2937;
     font-size: 18px;
     color: #e5e7eb;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .section1 {
     display: flex;
     background-color: #1f2937;
     color: #e5e7eb;
-    font-size: 18px;
     justify-content: space-between;
+    font-size: 18px;
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 5%;
+}
+
+.section1 button {
+    border-width: 0px;
+}
+
+.section1 .section1-left {
+    max-width: 50%;
+    font-weight: lighter;
 }
 
 .section1 .h1 {
@@ -27,36 +63,41 @@ body {
 
 .section1-right {
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
+    justify-self: center;
+    align-self: center;
     background-color: #e5e7eb;
     color: black;
-    padding: 5%;
-    margin: 5%;
+    width: 40%;
+    height: 300px;
 }
 
-.images-and-subtext {
-    margin-bottom: 10%;
-}
-
-.images-and-subtext .h2 {
+.flower-h2 {
     text-align: center;
     font-weight: 900;
     font-size: 36px;
     color: #1f2937;
 }
 
-.images-and-subtext .images {
+.images-and-subtext {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 5%;
 }
 
-.images-and-subtext .subtext {
-    display: flex;
-    justify-content: space-between;
+.images-and-subtext .image-text-pair {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    text-justify: inter-word;
 }
 
 .testimonial {
+    margin-top: 5%;
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 20%;
@@ -76,7 +117,33 @@ body {
     font-style: normal;
 }
 
+.cta {
+    display: flex;
+    background-color: #3882f6;
+    color: #f9faf8;
+    justify-content: space-around;
+    max-width: 80%;
+    margin: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.cta .cta-button {
+    display: flex;
+    align-items: center;
+}
+
 .footer {
     background-color: #1f2937;
     color: #e5e7eb;
+    position: relative;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
